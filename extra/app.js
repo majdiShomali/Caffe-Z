@@ -89,3 +89,62 @@ alert("nine");
 break;
 
 }
+
+// Q7: Use a loop to display the numbers 0 through 5, each in a separate alert window.
+for(let i=0;i<6;i++){
+alert(i);
+}
+
+// Q8: Use a loop to display the numbers 0 through 5 in a single alert window
+let q8=[];
+for(let i=0;i<6;i++){
+    q8.push(i);
+    }
+    alert(q8);
+
+// Q9: Use a loop to display the numbers in the range 0…20 that are multiples of 3. 
+let q9=[];
+for(let i=0;i<20;i++){
+    if((i%3)==0){
+    q9.push(i);   
+    }
+    }
+    alert(q9);
+    
+// Q10: Prompt the user for a number in the range 0…100.  If the number is out of range, display an error message and prompt again until a valid number is entered.  Assume the user enters a number each time
+let q10=prompt("please enter a number between 0 and 100") ;
+
+while(q10>100){
+    q10=prompt("please re-enter a number between 0 and 100") ;
+}
+
+// Q11: Repeat previous exercise, but this time allow for the possibility that the user enters something that is not a number.  Hint: the built in function isNaN(x) returns true if x is not a number.  It returns false if x is a number.  Sort of backwards, but that's what's available.
+
+let q11=prompt("please enter a number") ;
+
+while(isNaN(q11)){
+    q11=prompt("please re-enter a number") ;
+}
+
+
+// Q12: Prompt for an integer, then display the sum of the integers from 0 through the number entered.  For example, if you enter 10, then display 55 which is the sum of   0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+
+let q12=[];
+let sumq12=0;
+for(let i=0;i<11;i++){
+
+    q12[i]=Number(prompt("please enter an integer number"))  ;
+    sumq12=q12[i]+sumq12
+}
+alert(`the sum is ${sumq12/(q12.length)}`);
+
+// Q13: Prompt for an integer, then display the average of the integers from 0 through the number entered.  For example, if you enter 10, then display 5 which is the average of   (0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10)/11.
+
+let q13=[];
+let sumq13=0;
+for(let i=0;i<11;i++){
+
+    q13[i]=Number(prompt("please enter an integer number"))  ;
+    sumq13=q13[i]+sumq13
+}
+alert(`the average is ${sumq13/(q13.length)}`);
