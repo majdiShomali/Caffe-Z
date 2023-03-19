@@ -19,4 +19,8 @@ let drinkName =prompt("what is your drink name?");
 alert("your drink is getting prepared ");
 
 let orderInfo=[name, gender, drinkType ,drinkName];
-console.log(orderInfo );
+
+for(let i=0 ; i<orderInfo.length;i++){
+    console.log(orderInfo[i] );
+
+}
