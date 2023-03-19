@@ -44,7 +44,7 @@ let x5=prompt("put one number");
 let x6=prompt("put another number");
 
 
-alert(" the sum is " (x5+x6));
+alert(" the sum is " + (x5+x6));
 
 
 // Q6: If you have a “num” variable,  Your task is to print:
