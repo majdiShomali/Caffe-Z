@@ -1,12 +1,15 @@
 let name =prompt("what is your name ?");
-let gender =prompt("what is your Gender male/female ?");
 
 
-while(gender!="male" &&  gender!="female"){
-gender =prompt("please enter you gender  male/female ?");
-}
+let checkGender =()=>{
 
-let checkGender =(gender)=>{
+    let gender =prompt("what is your Gender male/female ?");
+
+
+    while(gender!="male" &&  gender!="female"){
+    gender =prompt("please enter you gender  male/female ?");
+    }
+
     if(gender=="male"){
         alert(`welcome MR ${name} !`);
         }else if(gender=="female"){
