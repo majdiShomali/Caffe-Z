@@ -143,11 +143,12 @@ alert(`the sum is ${sumq12/(q12.length)}`);
 
 // Q13: Prompt for an integer, then display the average of the integers from 0 through the number entered.  For example, if you enter 10, then display 5 which is the average of   (0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10)/11.
 
-let q13=[];
+let q13=Number(prompt("please enter an integer number"))  ;
 let sumq13=0;
-for(let i=0;i<11;i++){
-
-    q13[i]=Number(prompt("please enter an integer number"))  ;
-    sumq13=q13[i]+sumq13
+let i=q13;
+while(i!=0){
+    sumq13=i+sumq13;
+   i--;
 }
-alert(`the average is ${sumq13/(q13.length)}`);
+
+alert(`the average is ${sumq13/(q13+1)}`);
