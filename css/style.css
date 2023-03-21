@@ -73,7 +73,7 @@ body{
      
         }
 
-        .container00 .text0 p{
+        .container00 .text0 p.ppo{
             color: #2c3e50;
             font-size: 2rem;
             border-bottom: 1px solid #2c3e50;
@@ -199,13 +199,13 @@ body{
                 font-size: 2rem;
                  }
          
-                 .container00 .text0 p{
+                 .container00 .text0 p.ppo{
                      
                      font-size: 1rem;
                       } 
 
 
-                      p {
+                      p.ppo {
                         border-right: solid 3px rgba(0,255,0,.75);
                         white-space: nowrap;
                         overflow: hidden;    
@@ -215,7 +215,7 @@ body{
                       }
                       
                       /* Animation */
-                      p {
+                      p.ppo {
                         animation: animated-text 3s steps(29,end) 0s 1 normal both,
                                    animated-cursor 600ms steps(29,end) infinite;
                       }

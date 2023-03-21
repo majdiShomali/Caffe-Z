@@ -29,14 +29,31 @@ for(let i=0 ; i<orderInfo.length;i++){
     console.log(orderInfo[i] );
 }
 
-let dataName =document.querySelector(".container_list p");
-dataName.innerHTML=name0;
+let container0=document.getElementById("container_list");
+
+
+let p=document.createElement("p");
+p.textContent=name0;
+
+container0.appendChild(p);
+
+
+let ul=document.createElement("ul");
+container0.appendChild(ul);
+let li=[];
+for(let i=0;i<3;i++){
+ li[i]=document.createElement("li");
+ ul.appendChild(li[i]);
+}
 
 
 
-let dataList =document.querySelectorAll(".container_list ul li");
-dataList[0].innerHTML=`Gender : ${gender}`;
-dataList[1].innerHTML=`Age : ${age}`;
-dataList[2].innerHTML=`Drink : ${drinkType} ${drinkName}`;;
+
+
+
+
+li[0].textContent=`Gender : ${gender}`;
+li[1].textContent=`Age : ${age}`;
+li[2].textContent=`Drink : ${drinkType} ${drinkName}`;;
 
 
