@@ -37,6 +37,6 @@ dataName.innerHTML=name0;
 let dataList =document.querySelectorAll(".container_list ul li");
 dataList[0].innerHTML=`Gender : ${gender}`;
 dataList[1].innerHTML=`Age : ${age}`;
-dataList[2].innerHTML=`Drink : ${drinkType} ${drinkName}`;
+dataList[2].innerHTML=`Drink : ${drinkType} ${drinkName}`;;
 
 
