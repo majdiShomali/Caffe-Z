@@ -97,7 +97,7 @@ body{
 
 
 /* ------------------------------------------------ */
-             p {
+             p.ppo {
                 border-right: solid 3px rgba(0,255,0,.75);
                 white-space: nowrap;
                 overflow: hidden;    
@@ -107,7 +107,7 @@ body{
               }
               
               /* Animation */
-              p {
+              p.ppo {
                 animation: animated-text 1s steps(29,end) 0s 1 normal both,
                            animated-cursor 600ms steps(29,end) infinite;
               }
