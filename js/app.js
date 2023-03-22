@@ -25,7 +25,7 @@ if(cold && hot){
     }else if(hot){
         drinkType00="Hot"
     }
-    //ggg
+    
     
 
 
