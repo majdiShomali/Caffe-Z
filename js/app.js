@@ -15,13 +15,18 @@ formSub0.addEventListener("submit",namePassword);
 
     let hot=(formSub0.target.userdrinkType.checked );
     let cold=(formSub0.target.userdrinkType1.checked );
+  
 let drinkType00;
-    if(cold){
-     
-drinkType00="Cold"
+if(cold && hot){
+    drinkType00="Cold and Hot";
+     }
+    else if(cold){ 
+   drinkType00="Cold"
     }else if(hot){
         drinkType00="Hot"
     }
+    //ggg
+    
 
 
     let drinkName00=formSub0.target.userdrinkName.value;
