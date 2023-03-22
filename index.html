@@ -80,49 +80,96 @@
               <p class="ppo">Good morning</p>
               <a href="#"><button >Order Now</button></a>
 
+
+       
+
+
+
+
+
               <fieldset style="color: blue;">
-                <legend>login</legend>
                 <!-- post to hide information-->
-          
-                <form method="post" id="input_submt" onsubmit="return false">
-                  <div>
-                    <label class="me-5" for="name"> name</label>
-                    <input id="name" type="text" placeholder="what is your name " name="username" />
-                  </div>
-          
-                  <div>
-                    <label class="me-4" for="age"> your age </label>
-                    <input id="age" type="text" placeholder="what is your age ?" name="userage"/>
-                  </div>
-          
-              
+ 
+                <form class="border border-dark mt-2" method="post" id="input_submt" onsubmit="return false">
 
-                 
+                  <div class="container">
 
+                    <div class="row">
+                      <div class="col-3">
+                        <div>
+                          <label class="me-5" for="name"> name</label>
+                        </div>
+                      </div>
+                      <div class="col-9">
+                        <input id="name" type="text" placeholder="what is your name " name="username" />
 
-               
-
-                  <div class="d-flex ms-1">
-                    <h6> drinkType </h6>
-                    <div>
-                   <label class="ms-4" for="#Hot"> Hot </label>
-                   <input  id="Hot" type="checkbox" value="Hot" name="userdrinkType" >
+                      </div>
                     </div>
-              
-                    <div>
-                      <label class="ms-2" for="#Cold"> Cold </label>
-                      <input id="Cold" type="checkbox" value="Cold" name="userdrinkType1" >
-                       </div>
+
+                    <div class="row">
+                      <div class="col-3">
+                        <div>
+                          <label class="me-4" for="age"> your age </label>
+                        </div>
+                
+                      </div> 
+                      <div class="col-9">
+                        <input id="age" type="text" placeholder="what is your age ?" name="userage"/>
+
+                      </div>             
+                    </div>
+                 
+                    <div class="row">
+                      <div class="col-3">
+                        <h6> drinkType </h6>
+
+             
+                      </div> 
+                      <div class="col-9">
+                        <div class="d-flex ">
+                          <div>
+                         <label class="" for="#Hot"> Hot </label>
+                         <input  id="Hot" type="checkbox" value="Hot" name="userdrinkType" >
+                          </div>
+                    
+                          <div>
+                            <label class="ms" for="#Cold"> Cold </label>
+                            <input id="Cold" type="checkbox" value="Cold" name="userdrinkType1" >
+                             </div>
+                        </div>
+                      </div>             
+                    </div>
+
+                    <div class="row">
+                      <div class="col-3">
+                        <div>
+                          <label for="drinkName"> drinkName </label>
+                        </div>
+                      </div> 
+                      <div class="col-9">
+                        <input id="drinkName" type="text" placeholder="drinkName" name="userdrinkName"/>
+                      </div>             
+                    </div>
+
+                    <div class="row ">
+                      <div class="col-12 ">
+                        <input id="inputSignIn" type="submit" value="OrderNow" />
+                      </div>              
+                    </div>
+
                   </div>
+
+
+             
+          
+             
+            
+
                 
             
 
-                  <div>
-                    <label for="drinkName"> drinkName </label>
-                    <input id="drinkName" type="text" placeholder="drinkName" name="userdrinkName"/>
-                  </div>
+              
 
-                  <input id="inputSignIn" type="submit" value="OrderNow" />
                 </form>
           
                 
